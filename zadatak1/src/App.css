@@ -1,0 +1,104 @@
+ #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid #f9cbcb;
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 45px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #b64b4b;
+  text-shadow: 1px 0px #5a5a5a;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid #b9b6b6a0;
+  box-shadow: 1px 1px 2px 2px #676767;
+  margin: 10px;
+}
+
+hr {
+  margin: 0;
+  color:#4974a5;
+}
+
+h2{
+  margin: 0;
+  font-size: 28px;
+  color:#4974a5;
+}
+
+/****** GENERAL INFO ******/
+.general-info {
+  border: 2px solid #b64b4b;;
+  border-radius: 10px;
+  overflow: auto;
+  padding: 20px;
+  margin: 30px 10px;
+  background-color: #f0dbdb58;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 20px;
+}
+
+.info h4 {
+  font-size: 20px;
+  color: #5B81AE;
+}
+
+.info p {
+  padding-top: 4px;
+  font-size: 20px;
+  color: #4974a5;
+}
+
+/********** SKILLS ********/
+.skills {
+  border: 2px solid #b64b4b;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #e9c9c9a2;
+}
+
+.pb h4 {
+  margin: 5px 10px;
+  text-align: left;
+  font-size: 18px;
+  color: #5B81AE;
+}
+.progressbar {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ef7b7b;
+  margin-bottom: 20px;
+  box-shadow: 1px 2px #676767;
+}
+
+.progressPercent {
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
