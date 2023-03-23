@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import './App.css'
 import Team from './components/Team';
 import Button from './components/Button';
@@ -14,6 +14,14 @@ function App() {
 
   const [num1, setNum1] = useState(0);
   const [num2, setNum2] = useState(0);
+  const [flag,setFlag] = useState(false);
+  const [time, setTime] = useState(0);
+
+  function ResetAll() {
+    setNum1(0);
+    setNum2(0);
+    setFlag(false);
+  }
 
   let today = new Date();
   let date=today.getDate() + "/"+ (today.getMonth()+1) +"/"+today.getFullYear();
@@ -28,17 +36,26 @@ function App() {
         <div className="score">
             
           <p>{num1} : {num2}</p>
-          <Countdown/>
+
+          <Countdown flag={flag}/>          
+
           <div className="controls">
-            <Button sign="+" action={() => {setNum1(num1+1)}} />
-            <Button sign="-" action={() => {(num1==0) ? <p></p> : setNum1(num1-1)}} />
-            <button className='button' style={{backgroundColor: "#8b0000"}} onClick={() => {setNum1(0); setNum2(0)}}>0</button>
-            <Button sign="+" action={() => setNum2(num2+1)} />
-            <Button sign="-" action={() => {(num2==0) ? <p></p> : setNum2(num2-1)}} />
+            <Button sign="+" action={() => {setNum1(num1+1)}} flag={flag}/>
+            <Button sign="-" action={() => {(num1==0) ? <p></p> : setNum1(num1-1)}} flag={flag}/>
+            <Button sign="+" action={() => setNum2(num2+1)} flag={flag}/>
+            <Button sign="-" action={() => {(num2==0) ? <p></p> : setNum2(num2-1)}} flag={flag} />
           </div>
+
+          {!flag &&
+          <button className="start-btn" onClick={() => setFlag(true)}>Start Game</button>}
+          {(flag)&& 
+          <button className='start-btn' style={{backgroundColor: "#8b0000"}} onClick={ResetAll}>Reset</button>
+          }
+          
         </div>
 
         <Team name={team2name} teamphoto={team2}/>
+        
       </div>
 
     </div>

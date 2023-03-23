@@ -54,7 +54,6 @@
   font-size: 130px;
   text-shadow: 1px 2px #a3a3a3;
   color: #ffffff;
-  /* border: 1px solid white; */
 }
 
 .controls {
@@ -72,4 +71,9 @@
   transition: opacity 0.3s;
   opacity: 0.9;
   border: none;
+}
+
+.start-btn {
+  font-size: 20px;
+  margin-top: 15px;
 }

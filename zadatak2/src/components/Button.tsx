@@ -1,6 +1,7 @@
 type ButtonProps = {
     sign: string;
     action: Function;
+    flag: boolean;
 }
 function Button(props: ButtonProps) {
 
@@ -10,7 +11,12 @@ function Button(props: ButtonProps) {
 
     return (
         <div className="button">
+            {(props.flag == false) &&
+              <button className="disabled-btn" disabled>{props.sign}</button>
+            }
+            {(props.flag == true) &&           
             <button onClick={handleClick}>{props.sign}</button>
+            }
         </div>
     )
 }
