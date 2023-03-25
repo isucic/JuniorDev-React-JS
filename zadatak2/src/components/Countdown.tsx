@@ -1,6 +1,8 @@
 import {useEffect, useState} from 'react';
 type CountdownProps = {
     flag: boolean;
+    action: Function;
+    buttonClicked: boolean;
 }
 
 function Countdown(props: CountdownProps) {
@@ -14,9 +16,12 @@ function Countdown(props: CountdownProps) {
             if(time < 5400) //this is 90 minutes in seconds
                 setTime((prevTime) => prevTime + 1);
         },1000);
-
+        if(props.buttonClicked){
+            props.action(convertTime(time));
+        }
         return () => clearInterval(timer);
-    },[time,props.flag]);
+
+    },[time,props.flag,props.buttonClicked]);
 
     function convertTime(seconds: number): string {
         const minutes = Math.floor(seconds/60);
