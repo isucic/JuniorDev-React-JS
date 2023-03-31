@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container {
+  width: 600px;
+  height: auto;
+  padding: 30px;
+  background-color: #cdd7e2;
+}
+
+.title h1, .title h2 {
+  display: inline;
+}
+
+.title h1 {
+  font-size: 30px;
+}
+.title h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  font-style: italic;
+}
+.title {
+  text-align: left;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  padding-top: 5px;
+  color: #063970;
+}
+
+input[type="text"], select {
+  font-size: 16px;
+  height: 30px;
+  width: 95%;
+  padding: 0 5px;
+  margin: 7px 0;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  /* border-color: #063970; */
+  border: none;
+}
+
+input[type="radio"],input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 5px;
+  cursor: pointer;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+input[type="radio"] {
+  border-radius: 50%;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+}
+input[type="radio"]:checked {
+  background-color: #93e026;
+}
+input[type="checkbox"] {
+  background-color: #e7e6e7;
+  border-radius: 15%;
+}
+input[type="checkbox"]:checked{
+  background-color: #93e026;
+}
+.paying-radio,.terms-checkbox {
+  display: flex;
+  align-items: center;
+}
+option {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h3 {
+  margin:0;
+}
+
+.contact-cntr,.address-cntr,.paying-cntr {
+  border: 1px solid white;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error-message {
+  font-size: 15px;
+  color: red;
+  margin: 0;
+  height: 20px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 30px auto;
+}
+
+
+/******* INFORMATION COMPONENT ******/
+.info-cntr {
+  text-align: center;
+  background-color: #CDCDCD;
+  box-shadow: 2px 3px #6192ca;
+  padding: 20px;
+  margin-top: 100px;
+}
+.info-cntr h1 {
+  font-size: 25px;
+  color: 	#4974a5;
+}
+.info-cntr h2{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0;
+  margin-right: 20px;
+}
+.info-cntr p {
+  margin: 0;
+  font-weight:500;
+  color:#063970;
+  justify-content: space-around;
+}
+.info-cntr .info-box {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
