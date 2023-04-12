@@ -1,0 +1,50 @@
+/*
+pozadina: #cfe2f3;
+container: #134f5c;
+naslov containera: #134f5c;
+boja botuna: #5c758c;
+slova botuna: #f5f3f3;
+*/
+
+.questionCard {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px grey;
+    padding: 20px;
+}
+
+.questionCard h1 {
+    font-size: 40px;
+    color: #134f5c;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn {
+    font-size: 20px;
+    margin: 5px;
+    background-color:#5c758c;
+    color:#f5f3f3;
+    width: 50%;
+}
+.btn:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+    border: 1px solid #5c758c;
+}
+
+.correct_btn {
+    border: 3px solid lightgreen;
+    pointer-events: none;
+}
+
+.incorrect_btn {
+    border: 3px solid red;
+    pointer-events: none;
+}
+
