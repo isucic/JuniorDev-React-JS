@@ -8,10 +8,12 @@ function App() {
   const [doAgain, setDoAgain] = useState(false)
 
   useEffect(() => {
+    if(!doAgain){
     axios
       .get("https://opentdb.com/api.php?amount=5")
-      .then(res => setQuestions(res.data.results))
+      .then(res => {setQuestions(res.data.results); console.log(res.data.results)})
       .catch(err => alert(err))
+    }
 
       if(doAgain) setDoAgain(false);
   },[doAgain]);
@@ -20,7 +22,6 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [score, setScore] = useState(0)
   const [showAnswers,setShowAnswers] = useState(false)
-
 
   const handleAnswer = (answer) => {
     if(answer === questions[currentQuestionIndex].correct_answer){

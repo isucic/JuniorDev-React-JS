@@ -1,9 +1,9 @@
-import {useState } from 'react'
+import { useState } from 'react'
 import style from '../styles/Question.module.css'
 
 function Question(props){
 
-    var answers = [props.correct_answer, ...props.incorrect_answers].sort(() => Math.random() - 0.5)
+    const answers = [props.correct_answer, ...props.incorrect_answers].sort(() => Math.random() - 0.5)
     const [isDisabled,setIsDisabled] = useState(false);
 
     const handleButtonClick = (answer) => {
