@@ -1,0 +1,14 @@
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.photo {
+    width: 70px;
+    height: auto;
+}

@@ -1,0 +1,173 @@
+{
+  "products": [
+    {
+      "type": "Top",
+      "size": "M",
+      "color": "#090909",
+      "image": "blackazaratop.png",
+      "id": 1
+    },
+    {
+      "type": "Haljina",
+      "size": "S",
+      "color": "#d52828",
+      "image": "redlongdress.png",
+      "id": 2
+    },
+    {
+      "type": "Jeans",
+      "size": "M",
+      "color": "#2273cb",
+      "image": "jeans.png",
+      "id": 3
+    },
+    {
+      "type": "Torba",
+      "size": "/",
+      "color": "#070707",
+      "image": "bag.png",
+      "id": 4
+    },
+    {
+      "type": "Obuća",
+      "size": "/",
+      "color": "#d7b187",
+      "image": "beigeheels.png",
+      "id": 5
+    },
+    {
+      "type": "Modni dodaci",
+      "size": "/",
+      "color": "#070707",
+      "image": "blackbucklebelt.png",
+      "id": 6
+    },
+    {
+      "type": "Košulja",
+      "size": "S",
+      "color": "#728ad3",
+      "image": "blueshirt.png",
+      "id": 7
+    },
+    {
+      "type": "Kaput",
+      "size": "L",
+      "color": "#c6ae94",
+      "image": "coat.png",
+      "id": 8
+    },
+    {
+      "type": "Jakna",
+      "size": "L",
+      "color": "#e31e66",
+      "image": "pinkblazer.png",
+      "id": 9
+    },
+    {
+      "type": "Jakna",
+      "size": "M",
+      "color": "#8895a8",
+      "image": "denimjacket.png",
+      "id": 10
+    },
+    {
+      "type": "Obuća",
+      "size": "/",
+      "color": "#417044",
+      "image": "nikedunks.png",
+      "id": 11
+    },
+    {
+      "type": "Torba",
+      "size": "S",
+      "color": "#ecd6a6",
+      "image": "beige-handbag.png",
+      "id": 12
+    },
+    {
+      "type": "Top",
+      "size": "M",
+      "color": "#0e0e0e",
+      "image": "blacktop.png",
+      "id": 13
+    },
+    {
+      "type": "Modni dodaci",
+      "size": "S",
+      "color": "#edcb83",
+      "image": "gold.earings.png",
+      "id": 14
+    },
+    {
+      "type": "Obuća",
+      "size": "/",
+      "color": "#c28964",
+      "image": "uggsmini.png",
+      "id": 15
+    },
+    {
+      "type": "Suknja",
+      "size": "M",
+      "color": "#dc4c4c",
+      "image": "redskirt.png",
+      "id": 16
+    },
+    {
+      "type": "Obuća",
+      "size": "/",
+      "color": "#fbfafa",
+      "image": "vejawshoes.png",
+      "id": 17
+    },
+    {
+      "type": "Top",
+      "size": "XS",
+      "color": "#f0bdbd",
+      "image": "tanktop-pink.png",
+      "id": 18
+    },
+    {
+      "type": "Haljina",
+      "size": "M",
+      "color": "#070707",
+      "image": "tvid-dres.png",
+      "id": 19
+    },
+    {
+      "type": "Majica",
+      "size": "XL",
+      "color": "#ffffff",
+      "image": "white-tshirt.png",
+      "id": 20
+    },
+    {
+      "type": "Majica",
+      "size": "M",
+      "color": "#b9361a",
+      "image": "womens-top-red.png",
+      "id": 21
+    }
+  ],
+  "type": [
+    "Haljina",
+    "Hlače",
+    "Jakna",
+    "Jeans",
+    "Kaput",
+    "Košulja",
+    "Majica",
+    "Modni dodaci",
+    "Obuća",
+    "Suknja",
+    "Top",
+    "Torba"
+  ],
+  "size": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "/"
+  ]
+}

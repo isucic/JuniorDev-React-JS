@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.title {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.otherDivs {
+  border: 1px solid white;
+  display: flex;
+  /* height: 600px; */
+  margin: 50px;
+}
+
+.right-side {
+  border: 1px solid white;
+  width: 66%;
+}
