@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from '../styles/AddNewClothes.module.css'
+import styles from '../styles/PhotoInput.module.css'
 
 function PhotoInput({podaci, promjenaUlaza}){
 
@@ -11,18 +11,16 @@ function PhotoInput({podaci, promjenaUlaza}){
     }
 
     return(
-        <div className="BoxUpload">
-            <div className="image-upload">
+            <div className={styles.imageUpload}>
             {!isUploaded ? (
-                <label>
+                <label className={styles.inputPhoto}>
                     <input type="file" accept="image/*" onChange={fileUpload} name="image" value={podaci.image}/>
                 </label>
             ) : (
-                <div className="ImagePreview">
+                <div className={styles.ImagePreview}>
                     <img className={styles.uploadedImage} src={isUploaded} draggable={false} alt="uploaded-img" />
                 </div>
             )}
-            </div>
     </div>
     )
 }

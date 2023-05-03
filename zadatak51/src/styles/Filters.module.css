@@ -1,6 +1,56 @@
-.filters {
-    display: flex;
-    /* flex-direction: row; */
-    border: 1px solid white;
-    justify-content: space-around;
+.filtersDiv {
+  background-color: #fff;
+  padding: 10px;
 }
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+  
+  input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 5px;
+  cursor: pointer;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+}
+
+input[type="radio"]:checked {
+    background-color: #de5499;
+}
+  
+.filters label {
+    font-size: 16px;
+}
+  
+.filterClickBtn {
+    background-color: #de5499;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+ .filterClickBtn:hover {
+    background-color: #c24785;
+}  
+  

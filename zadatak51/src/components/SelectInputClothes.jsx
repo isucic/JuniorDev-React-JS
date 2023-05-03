@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
+import styles from '../styles/SelectInputClothes.module.css'
+
 function SelectInputClothes({podaci, promjenaUlaza, vrsta}){
     const [lista, setLista] = useState([])
 

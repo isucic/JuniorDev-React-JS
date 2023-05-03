@@ -6,8 +6,6 @@ import PhotoInput from './PhotoInput';
 import ColorPicker from './ColorPicker';
 
 function AddingNewClothes(props){
-    
-    const [color, setColor] = useState("#ffffff");
     const [podaci,setPodaci] = useState({
         type:"",
         size:"",
@@ -25,33 +23,32 @@ function AddingNewClothes(props){
             value = value.split('\\').pop();
         }
         setPodaci({...podaci,[name]: value})
+
     }
 
     const handleSubmit = event => {
         event.preventDefault();
-        // const zaSlanje = obradiPodatke(podaci)
-
         axios.post("http://localhost:3001/products", podaci, {
             headers: {
                 'content-type': "application/json"
             }
         })
          .then(res => {
-            props.dodaj(stanje => [...stanje,res.data])
+            props.dodaj(stanje => [res.data, ...stanje])
          })
+         
     }
     
     return(
         <div className={styles.addNew}>
             <h2>Dodaj novu</h2>
-
             <SelectInputClothes podaci={podaci} promjenaUlaza={promjenaUlaza} vrsta="type"/>
             <SelectInputClothes podaci={podaci} promjenaUlaza={promjenaUlaza} vrsta="size" />
 
             <ColorPicker podaci={podaci} promjenaBoje={promjenaBoje}/>
             <PhotoInput podaci={podaci} promjenaUlaza={promjenaUlaza}/>
             
-            <button onClick={handleSubmit}>Spremi</button>
+            <button className={styles.addNewBtn} onClick={handleSubmit}>Spremi</button>
 
         </div>
     )

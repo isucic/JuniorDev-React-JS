@@ -3,13 +3,13 @@
     {
       "type": "Top",
       "size": "M",
-      "color": "#090909",
+      "color": "#e0d9d9",
       "image": "blackazaratop.png",
       "id": 1
     },
     {
       "type": "Haljina",
-      "size": "S",
+      "size": "XS",
       "color": "#d52828",
       "image": "redlongdress.png",
       "id": 2
@@ -30,8 +30,8 @@
     },
     {
       "type": "Obuća",
-      "size": "/",
-      "color": "#d7b187",
+      "size": "L",
+      "color": "#795b39",
       "image": "beigeheels.png",
       "id": 5
     },
@@ -85,67 +85,39 @@
       "id": 12
     },
     {
-      "type": "Top",
+      "type": "Majica",
       "size": "M",
       "color": "#0e0e0e",
       "image": "blacktop.png",
       "id": 13
     },
     {
-      "type": "Modni dodaci",
+      "type": "Suknja",
       "size": "S",
-      "color": "#edcb83",
-      "image": "gold.earings.png",
+      "color": "#db5d5d",
+      "image": "redskirt.png",
       "id": 14
     },
     {
-      "type": "Obuća",
-      "size": "/",
-      "color": "#c28964",
-      "image": "uggsmini.png",
+      "type": "Majica",
+      "size": "XS",
+      "color": "#c53737",
+      "image": "womens-top-red.png",
       "id": 15
     },
     {
-      "type": "Suknja",
-      "size": "M",
-      "color": "#dc4c4c",
-      "image": "redskirt.png",
+      "type": "Modni dodaci",
+      "size": "/",
+      "color": "#e3ba29",
+      "image": "gold.earings.png",
       "id": 16
     },
     {
-      "type": "Obuća",
-      "size": "/",
-      "color": "#fbfafa",
-      "image": "vejawshoes.png",
-      "id": 17
-    },
-    {
-      "type": "Top",
+      "type": "Majica",
       "size": "XS",
-      "color": "#f0bdbd",
-      "image": "tanktop-pink.png",
-      "id": 18
-    },
-    {
-      "type": "Haljina",
-      "size": "M",
-      "color": "#070707",
-      "image": "tvid-dres.png",
-      "id": 19
-    },
-    {
-      "type": "Majica",
-      "size": "XL",
-      "color": "#ffffff",
+      "color": "#fcf9f9",
       "image": "white-tshirt.png",
-      "id": 20
-    },
-    {
-      "type": "Majica",
-      "size": "M",
-      "color": "#b9361a",
-      "image": "womens-top-red.png",
-      "id": 21
+      "id": 17
     }
   ],
   "type": [

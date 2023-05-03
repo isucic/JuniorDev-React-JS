@@ -16,7 +16,7 @@ function ClothesTable({products}){
                 </thead>
 
                 <tbody>
-                    {products.map(product => (
+                    {products.reverse().map(product => (
                         <RowTable key={product.id} product={product} />
                     ))
                     }

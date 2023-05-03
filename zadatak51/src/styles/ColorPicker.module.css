@@ -1,0 +1,36 @@
+.addColor {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+  
+label {
+    font-size: 16px;
+}
+button {
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+} 
+.coloredButton {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.popover {
+    position: absolute;
+    z-index: 2;
+}
+.cover {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
