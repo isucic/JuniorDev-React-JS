@@ -4,18 +4,21 @@ function GeneralInfo(props) {
             <h2>General Info</h2>
             <hr/>
 
-            <div className='info'>
-                <h4>Date of Birth</h4>
-                <p className="info-p">{props.dob}</p>
+            {Object.entries(props.generalInfo).map(([key, value], index) => (
+                <div className='info' key={index}>
+                <h4>{key}</h4>
+                <p className="info-p">{value}</p>
             </div>
-            <div className='info'>
+            ))}
+            
+            {/* <div className='info'>
                     <h4>Address</h4>
                     <p className="info-p">{props.add}</p>
             </div>
             <div className="info">
                     <h4>Contact Number</h4>
                     <p className="info-p">{props.contact}</p>
-            </div>
+            </div> */}
         </div>
     )
 }

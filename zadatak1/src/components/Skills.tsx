@@ -1,14 +1,20 @@
 import ProgressBar from "./ProgressBar";
 
-function Skills()
+const skillNames = ["Eating", "Sleeping", "Running"]
+
+function Skills({skills})
 {
     return (
         <div className="skills">
                 <h2>Skills</h2>
                 <hr/>
-                <ProgressBar skill="Eating" done="50"/>
+
+                {skills.map((skill,index) => (
+                    <ProgressBar skill={skillNames[index]} done={skill} key={index}/>
+                ))}
+                {/* <ProgressBar skill="Eating" done="50"/>
                 <ProgressBar skill="Sleeping" done="70"/>
-                <ProgressBar skill="Running" done="40"/>
+                <ProgressBar skill="Running" done="40"/> */}
             </div>
     )
 
